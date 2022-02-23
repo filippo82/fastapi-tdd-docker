@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "fastapi-tdd-docker"
+version = "0.1.0"
+description = "Test-Driven Development with FastAPI and Docker"
+authors = ["filippo82"]
+license = "Apache-2.0 License"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "0.70.1"
+uvicorn = "0.16.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.1.0"
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+pre-commit = "^2.17.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
