@@ -11,6 +11,7 @@ fastapi = "0.70.1"
 uvicorn = "0.16.0"
 asyncpg = "^0.25.0"
 tortoise-orm = "^0.18.1"
+aerich = "^0.6.2"
 
 [tool.poetry.dev-dependencies]
 black = "^22.1.0"
@@ -18,6 +19,11 @@ flake8 = "^4.0.1"
 isort = "^5.10.1"
 pre-commit = "^2.17.0"
 
+
+[tool.aerich]
+tortoise_orm = "app.db.TORTOISE_ORM"
+location = "./migrations"
+src_folder = "./."
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
